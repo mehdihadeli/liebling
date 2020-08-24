@@ -85,3 +85,44 @@
   letter-spacing: 0.2px;
   font-size: 0.875rem;
 }
+.global-tags {
+	font-weight: var(--font-weight-secondary-extra-bold);
+	position: relative;
+	z-index: 2;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	max-width: 500px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.global-tags a {
+	font-size: 8px;
+	line-height: 1.3;
+	display: inline-block;
+	margin: 7px 6px 0 0;
+	padding: 4px 6px 4px 8px;
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+	-webkit-transition-duration: 0.15s;
+	transition-duration: 0.15s;
+	-webkit-transition-property: color, background-color;
+	transition-property: color, background-color;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border: 1px solid;
+	border-color: var(--color-elements-three);
+	border-radius: 25px;
+}
+.loop-tags {
+	position: absolute;
+	top:20px;
+	left: 20px;
+}
+.global-tags a:hover {
+	color: white !important;
+	text-decoration: none!important;
+}
+.global-tags a:hover {
+	background-color: rgb(62 62 95);
+}
