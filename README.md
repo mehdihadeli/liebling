@@ -87,11 +87,13 @@ From now on, this theme is only compatible with Ghost 3
 * Turkish by [mskoroglu](https://github.com/mskoroglu)
 * Romanian by [dsecareanu](https://github.com/dsecareanu)
 * Chinese Simplified by [IvyB](https://github.com/IvyB)
-* Indonesian by [iqbalbinsb](https://github.com/iqbalbinsb)
+* Indonesian by [iqbalbinsb](https://github.com/iqbalbinsb), [khannedy](https://github.com/khannedy)
 * Lithuanian by [pintom](https://github.com/pintom)
 * Dutch by [Qballjos](https://github.com/Qballjos)
 * Traditional Chinese by [weixiang](https://github.com/weixiang)
 * Persian (Farsi) by [Aminoiz](https://github.com/Aminoiz)
+* Ukrainian by [partizan007](https://github.com/partizan007)
+* Kazakh by [arshyn-t](https://github.com/arshyn-t)
 
 ## Tests performed
 
@@ -117,7 +119,9 @@ Contributions are very welcome. First, please read the [Pull Request Guidelines]
 
 ## Related
 
-* [Weiss Pro](https://blog.eduardogomez.io/weiss-pro-modern-and-clean-ghost-theme/) - Modern and beautiful Ghost theme ready to make your content shine ✨
+* [Firma](https://gum.co/ZXLha) - Ghost theme that can be used by startups to large companies to publish any kind of articles related to their business. It stands out for its clean design and is able to adapt to any company's identity.
+
+* [Weiss Pro](https://eduardogomez.io/weiss-pro/) - Modern and beautiful Ghost theme ready to make your content shine.
 
 ## License
 
