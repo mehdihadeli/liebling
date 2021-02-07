@@ -3,29 +3,116 @@ This subscribe template is used to display the form where users can subscribe.
 You need to enable the members feature first.
 --}}
 
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+  #mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+  }
+
+  #mc-embedded-subscribe {
+    clear: none;
+    width: -webkit-fill-available;
+    display: block;
+    margin: 0px;
+  }
+
+  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
 <div class="m-subscribe-section__form">
-  <form data-members-form="subscribe" id="newsletter-form" class="m-subscribe-section__container">
-    <div class="m-subscribe__form">
-      <div class="pos-relative">
-        <label for="newsletter-input" class="sr-only">{{t "Your email address"}}</label>
-        <input data-members-email id="newsletter-input" class="m-input in-subscribe-section" type="email"
-          placeholder="{{t "Your email address"}}" required />
+  <form action="https://yahoo.us20.list-manage.com/subscribe/post?u=57e489293f10a341d8480fa86&amp;id=b9c35f5d39"
+    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+    class="validate m-subscribe-section__container" target="_blank" novalidate>
+    {{!-- <form data-members-form="subscribe" id="newsletter-form" class="m-subscribe-section__container"> --}}
+      <div class="m-subscribe__form">
+        <div class="pos-relative">
+          <label for="newsletter-input" class="sr-only">{{t "Your email address"}}</label>
+          <input class="m-input in-subscribe-section" type="email" value="" name="EMAIL" class="required email"
+            id="mce-EMAIL" placeholder="{{t " Your email address"}}" required />
+        </div>
+        <input name="subscribe" id="mc-embedded-subscribe" class="m-button primary block" type="submit"
+          value="Subscribe" />
       </div>
-      <button id="newsletter-button" class="m-button primary block" type="submit">{{t "Subscribe"}}</button>
-    </div>
-    <div class="m-subscribe__success">
-      <header class="m-heading no-margin">
-        <img src="{{asset "images/success.png"}}" alt="Success!" class="m-subscribe__success_icon">
-        <p class="m-heading__description in-newsletter-form">
-          {{t "Now check your inbox and click the link to confirm your subscription."}}
-        </p>
-      </header>
-    </div>
-    <p class="m-subscribe__invalid m-small-text">
-      {{t "Please enter a valid email address"}}
-    </p>
-    <p class="m-subscribe__error m-small-text">
-      {{t "Oops! There was an error sending the email, please try later."}}
-    </p>
-  </form>
+      <div id="mce-responses" class="clear" style="margin-top: 30px;">
+        <div class="response" style="color: red;" id="mce-error-response" style="display:none"></div>
+        <div class="response" style="color: lightgreen;" id="mce-success-response" style="display:none">
+        </div>
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+          name="b_57e489293f10a341d8480fa86_b9c35f5d39" tabindex="-1" value=""></div>
+      <div class="clear">
+      </div>
+      <div style="text-align: center;">
+        <span class="gh-subscribe-rss">or subscribe <a  style="text-decoration: underline;" href="https://feedly.com/i/subscription/feed/https://dotnetuniversity.com/rss/">via RSS</a> with
+          Feedly!</span>
+      </div>
+
+      {{!-- <div class="m-subscribe__success">
+        <header class="m-heading no-margin">
+          <img src="{{asset " images/success.png"}}" alt="Success!" class="m-subscribe__success_icon">
+          <p class="m-heading__description in-newsletter-form">
+            <span id="mce-success-response"></span>
+          </p>
+        </header>
+      </div>
+      <p class="m-subscribe__invalid m-small-text">
+        {{t "Please enter a valid email address"}}
+      </p>
+      <p class="m-subscribe__error m-small-text">
+        <span id="mce-error-response"></span>
+      </p> --}}
+
+
+    </form>
 </div>
+
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script
+  type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+
+
+<!-- Begin Mailchimp Signup Form -->
+{{!--
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+  #mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+  }
+
+  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style> --}}
+{{!-- <div id="mc_embed_signup">
+  <form action="https://yahoo.us20.list-manage.com/subscribe/post?u=57e489293f10a341d8480fa86&amp;id=b9c35f5d39"
+    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+    novalidate>
+    <div id="mc_embed_signup_scroll">
+      <h2>Subscribe</h2>
+      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+        </label>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+          name="b_57e489293f10a341d8480fa86_b9c35f5d39" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+          class="button"></div>
+    </div>
+  </form>
+</div> --}}
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script
+  type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
